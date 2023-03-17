@@ -12,13 +12,9 @@ int c;
 int cc;
 for (c = '0'; c <= '9'; c++)
 {
-for (cc = '0'; cc <= '9'; cc++)
-{
 putchar(c);
-putchar(cc);
 putchar(',');
 putchar(' ');
-}
 }
 putchar('\n');
 return (0);
