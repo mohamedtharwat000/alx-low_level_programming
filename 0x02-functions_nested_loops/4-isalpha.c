@@ -4,7 +4,7 @@
  * _isalpha - function that checks for alphabetic character.
  * @c :input
  * Return: 1 if c is a letter, lowercase or uppercase
- * Return: 0 otherwise
+ * Returns: 0 otherwise
 */
 
 
