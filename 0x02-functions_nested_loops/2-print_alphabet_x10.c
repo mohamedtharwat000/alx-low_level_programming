@@ -14,7 +14,7 @@
 		for (CHAR = 'a'; CHAR <= 'z'; CHAR++)
 		{
 			_putchar(CHAR);
-			_putchar('/n');
 		}
+			_putchar('/n');
 	}
  }
