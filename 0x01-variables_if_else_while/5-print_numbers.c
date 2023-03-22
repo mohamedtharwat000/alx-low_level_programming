@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - print if the number is postive, zero, or negative
+ * main - prints single digits from 1 to 9
  *
  * Description: using the main function
  * this program prints single digits
