@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - print if the number is postive, zero, or negative
+ * main - comb numbers
  *
  * Description: using the main function
  * this program comb numbers
