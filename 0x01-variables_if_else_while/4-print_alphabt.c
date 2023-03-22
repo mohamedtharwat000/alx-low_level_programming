@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - print if the number is postive, zero, or negative
+ * main - prints letters except e and q
  *
  * Description: using the main function
  * this program prints letters except e and q
