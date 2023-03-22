@@ -2,7 +2,7 @@
 
 /**
  * _isalpha - function that checks for alphabetic character.
- * @c :input
+ * @c: input
  * Return: 1 if c is a letter, lowercase or uppercase
  * Returns: 0 otherwise
 */
