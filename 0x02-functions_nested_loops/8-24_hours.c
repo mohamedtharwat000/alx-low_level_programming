@@ -20,7 +20,7 @@ void jack_bauer(void)
 			{
 				int mm = 0;
 
-				for (; mm < 9; mm++)
+				for (; mm <= 9; mm++)
 				{
 					_putchar('0' + h);
 					_putchar('0' + hh);
