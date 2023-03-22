@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - print if the number is postive, zero, or negative
+ * main - print the alphabet lower and upper case
  *
  * Description: using the main function
  * this program prints letters in lower and upper case
