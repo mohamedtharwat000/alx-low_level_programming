@@ -6,7 +6,7 @@
  * Return: 1 if @c: upper others return o
 */
 
-int _isupper(char c)
+int _isupper(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 	{
