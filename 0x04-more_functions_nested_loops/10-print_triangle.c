@@ -8,33 +8,24 @@
 
 void print_triangle(int size)
 {
+	int hash, index;
+
 	if (size > 0)
 	{
-		int rows = 1;
-		int line = 1;
-
-		while (rows <= size)
+		for (hash = 1; hash <= size; hash++)
 		{
-			while (line <= size - rows)
-			{
+			for (index = size - hash; index > 0; index--)
 				_putchar(' ');
-				line++;
-			}
-			line = 0;
 
-			while (line <= rows)
-			{
+			for (index = 0; index < hash; index++)
 				_putchar('#');
-				line++;
-			}
-			line = 0;
-			rows++;
+
+			if (hash == size)
+				continue;
+
 			_putchar('\n');
 		}
-		_putchar('\n');
 	}
-	else
-	{
-		_putchar('\n');
-	}
+
+	_putchar('\n');
 }
