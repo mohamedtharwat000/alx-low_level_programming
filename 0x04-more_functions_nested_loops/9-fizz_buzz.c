@@ -6,7 +6,7 @@
  * Return: void
 */
 
-void main(void)
+int main(void)
 {
 	int n = 1;
 
@@ -31,4 +31,5 @@ void main(void)
 		n++;
 	}
 	printf("\n");
+	return (0);
 }
