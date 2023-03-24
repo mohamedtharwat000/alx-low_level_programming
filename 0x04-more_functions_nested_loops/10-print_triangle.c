@@ -10,12 +10,12 @@ void print_triangle(int size)
 {
 	if (size > 0)
 	{
-		int rows = 0;
-		int line = 0;
+		int rows = 1;
+		int line = 1;
 
-		while (rows < size)
+		while (rows <= size)
 		{
-			while (line < size - rows)
+			while (line <= size - rows)
 			{
 				_putchar(' ');
 				line++;
