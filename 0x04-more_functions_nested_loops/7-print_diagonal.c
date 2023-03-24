@@ -11,17 +11,23 @@ void print_diagonal(int n)
 	int counter = 0;
 	int spaces = 0;
 
-	while (counter < n)
+	if (n > 0)
 	{
-		while (spaces < counter)
+		while (counter < n)
 		{
-			_putchar(' ');
-			spaces++;
+			while (spaces < counter)
+			{
+				_putchar(' ');
+				spaces++;
+			}
+			_putchar('\\');
+			_putchar('\n');
+			spaces = 0;
+			counter++;
 		}
-		_putchar('\\');
-		_putchar('\n');
-		spaces = 0;
-		counter++;
 	}
-	_putchar('\n');
+	else
+	{
+		_putchar('\n');
+	}
 }
