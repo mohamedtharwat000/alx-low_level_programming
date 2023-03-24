@@ -23,4 +23,5 @@ void print_diagonal(int n)
 		spaces = 0;
 		counter++;
 	}
+	_putchar('\n');
 }
