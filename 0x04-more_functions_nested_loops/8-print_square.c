@@ -14,10 +14,10 @@ void print_square(int size)
 	{
 		while (counter < size)
 		{
-			_putchar('\#');
-			_putchar('\n');
+			_putchar('#');
 			counter++;
 		}
+		_putchar('\n');
 	}
 	else
 	{
