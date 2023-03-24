@@ -31,7 +31,7 @@ void print_triangle(int size)
 			rows++;
 			_putchar('\n');
 		}
-	_putchar('\n');
+		_putchar('\n');
 	}
 	else
 	{
