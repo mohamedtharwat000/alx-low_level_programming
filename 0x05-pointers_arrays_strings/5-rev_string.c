@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * swap_int - function that swaps the values of two integers.
+ * rev_string - function that swaps the values of two integers.
  * @s: string value
  * Return: nothing
 */
