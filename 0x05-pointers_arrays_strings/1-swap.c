@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * rswap_int - function that swaps the values of two integers.
+ * swap_int - function that swaps the values of two integers.
  * @a: first value
- * @a: second value
+ * @b: second value
  * Return: nothing
 */
 
