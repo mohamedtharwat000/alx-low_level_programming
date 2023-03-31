@@ -6,23 +6,22 @@
  * Return: encoded string
  */
 
-char *leet(char *str)
+char *leet(char *s)
 {
+
+	int a[11] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+	int b[11] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
+
 	int i, j;
-	char arr1[10] = {'a', 'e', 'o', 't', 'l', 'A', 'E', 'O', 'T', 'L'};
-	char arr2[10] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};;
 
-	for (i = 0; str[i]; i++)
+	for (j = 0; s[j] != '\0'; j++)
 	{
-		for (j = 0; j < 10; j++)
+		for (i = 0; a[i] != '\0'; i++)
 		{
-			if (str[i] == arr1[j])
-			{
-				str[i] = arr2[j];
-			}
+			if (s[j] == a[i])
+				s[j] = b[i];
 		}
-
 	}
 
-	return (str);
+	return (s);
 }
