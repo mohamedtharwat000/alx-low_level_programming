@@ -12,27 +12,40 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i, j, counter = 0, needlelen = 0;
+	int i, j, counter, needlelen = 0;
 
+	/* Check for empty needle string */
+	if (needle[0] == '\0')
+	{
+		return (haystack);
+	}
+
+	/* Get length of needle string */
 	for (i = 0; needle[i] != '\0'; i++)
 	{
 		needlelen = i + 1;
 	}
 
+	/* Search for needle in haystack */
 	for (i = 0; haystack[i] != '\0'; i++)
 	{
 		if (haystack[i] == needle[0])
 		{
+			counter = 0;
 			for (j = 0; needle[j] != '\0'; j++)
 			{
 				if (haystack[i + j] == needle[j])
 				{
 					counter++;
 				}
-				if (counter == needlelen)
+				else
 				{
-					return (&haystack[i]);
+					break;
 				}
+			}
+			if (counter == needlelen)
+			{
+				return (haystack + i);
 			}
 		}
 	}
