@@ -12,30 +12,28 @@
 char *_strchr(char *s, char c)
 {
 
+	/**
+	 * for (;; ++s)
+	*{
+	*	if (*s == c)
+	*	{
+	*		return ((char *)s);
+	*	}
+	*	if (*s == '\0')
+	*	{
+	*		return (NULL);
+	*	}
+	*}
+	*/
 
-	for (;; ++s)
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (*s == c)
+		if (s[i] == c)
 		{
-			return ((char *)s);
-		}
-		if (*s == '\0')
-		{
-			return (NULL);
+			return (&s[i]);
 		}
 	}
-
-/**
- * int i;
- *
- *	for (i = 0; s[i] != '\0'; i++)
- *	{
- *		if (s[i] == c)
- *		{
- *			return (&s[i]);
- *		}
- *	}
- *	return ('\0');
-*/
-
+	return ('\0');
 }
