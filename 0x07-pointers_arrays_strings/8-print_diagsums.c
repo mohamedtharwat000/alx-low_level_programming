@@ -14,13 +14,13 @@ void print_diagsums(int *a, int size)
 	int i, sum1 = 0, sum2 = 0;
 
 	/* Calculate sum of first diagonal */
-	for (i = 0; i < size*size; i += size+1)
+	for (i = 0; i < size * size; i += size + 1)
 	{
 		sum1 += a[i];
 	}
 
 	/* Calculate sum of second diagonal */
-	for (i = size-1; i < size*size-1; i += size-1)
+	for (i = size - 1; i < size * size - 1; i += size - 1)
 	{
 		sum2 += a[i];
 	}
