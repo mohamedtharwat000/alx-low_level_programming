@@ -1,6 +1,22 @@
 #include "main.h"
 
 /**
+ * sqrt_helper - helper function
+ * @n: helper input
+ * @i: helper input
+ * Return: the natural square root of a number.
+ */
+
+int sqrt_helper(int n, int i)
+{
+	if (i * i > n)
+	{
+		return (i - 1);
+	}
+	return (sqrt_helper(n, i + 1));
+}
+
+/**
  * _sqrt_recursion - function that returns the natural square root of a number.
  * raised to the power of y.
  * @n: input number
@@ -20,20 +36,4 @@ int _sqrt_recursion(int n)
 	}
 
 	return (sqrt_helper(n, 1));
-}
-
-/**
- * sqrt_helper - helper function
- * @n: helper input
- * @i: helper input
- * Return: the natural square root of a number.
- */
-
-int sqrt_helper(int n, int i)
-{
-	if (i * i > n)
-	{
-		return (i - 1);
-	}
-	return (sqrt_helper(n, i + 1));
 }
