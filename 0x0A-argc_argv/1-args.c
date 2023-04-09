@@ -2,14 +2,14 @@
 #include <stdio.h>
 
 /**
- * main - program that prints its name, followed by a new line.
+ * main - program that prints the number of arguments passed into it.
  * @argc: number of arguments passed to the program.
  * @argv: an array of passed arguments.
  * Return: 0
  */
 
-int main(int argc __attribute__((unused)), char **argv)
+int main(int argc, char **argv __attribute__((unused)))
 {
-	printf("%s\n", *argv);
+	printf("%d\n", argc);
 	return (0);
 }
