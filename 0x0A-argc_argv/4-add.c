@@ -12,10 +12,10 @@
 int main(int argc, char **argv)
 {
 	int i, num, result = 0;
+	char *endptr;
 
 	for (i = 1; i < argc; i++)
 	{
-		char *endptr;
 		num = strtol(argv[i], &endptr, 10);
 
 		if (*endptr != '\0')
