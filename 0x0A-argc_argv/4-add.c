@@ -11,19 +11,20 @@
 
 int main(int argc, char **argv)
 {
-	int i, result = 0;
+	int i, num, result = 0;
 
 	for (i = 1; i < argc; i++)
 	{
-		if (atoi(*(argv + i)) == 0 && **(argv + i) != '0')
+		char *endptr;
+		num = strtol(argv[i], &endptr, 10);
+
+		if (*endptr != '\0')
 		{
 			printf("Error\n");
 			return (1);
 		}
 		else
 		{
-			int num = atoi(*(argv + i));
-
 			result += num;
 		}
 	}
