@@ -11,21 +11,23 @@
 
 int main(int argc, char **argv)
 {
-	int i, result = 0;
+	int i, j, result = 0;
 
 	for (i = 1; i < argc; i++)
 	{
-		if (atoi(*(argv + i)) == 0 && (**(argv + i) > '9' || **(argv + i) < '0'))
-		{
-			printf("Error\n");
-			return (1);
-		}
-		else
-		{
-			int num = atoi(*(argv + i));
 
-			result += num;
+		for (j = 0; argv[i][j] != '\0'; j++)
+		{
+			if ((argv[i][j] > '9' || argv[i][j] < '0'))
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
+
+		int num = atoi(*(argv + i));
+
+		result += num;
 	}
 
 	printf("%d\n", result);
