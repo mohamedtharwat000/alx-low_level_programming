@@ -19,7 +19,8 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	}
 
-	int i = 0, j = 0;
+	int i = 0;
+	int j = 0;
 	int **arr;
 
 	arr = malloc(sizeof(int *) * height);
