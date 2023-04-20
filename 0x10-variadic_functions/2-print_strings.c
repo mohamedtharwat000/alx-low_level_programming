@@ -33,22 +33,21 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			string = "(nil)";
 		}
 
+		printf("%s", string);
+
 		if (i == n - 1)
 		{
-			printf("%s\n", string);
+			printf("\n");
 			return;
 		}
 
-		if (!separator)
+		if (separator)
 		{
-			printf("%s", string);
-			return;
+			printf("%s", separator);
 		}
 
-		printf("%s%s", string, separator);
 		i++;
 	}
 
-	printf("\n");
 	va_end(args);
 }
