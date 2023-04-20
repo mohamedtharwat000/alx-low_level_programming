@@ -1,6 +1,8 @@
 #ifndef HEADER_H
 #define HEADER_H
 
+int _putchar(char c);
+
 /**
  * struct op - Struct op
  *
@@ -24,5 +26,6 @@ int (*get_op_func(char *s))(int, int);
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #endif /* HEADER_H */
