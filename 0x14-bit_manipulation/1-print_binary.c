@@ -12,9 +12,8 @@ void print_binary(unsigned long int n)
 	while (mask < n)
 	{
 		mask <<= 1;
-		mask += 1;
 	}
-	mask = mask / 2 + 1;
+
 
 	while (mask > 0)
 	{
