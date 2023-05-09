@@ -1,7 +1,5 @@
 #include "main.h"
 
-int _strlen(char *str);
-
 /**
  * create_file - function that creates a file.
  *
