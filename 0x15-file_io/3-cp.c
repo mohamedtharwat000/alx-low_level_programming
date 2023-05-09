@@ -11,7 +11,7 @@ void close_fd(int fd);
  * Return: 1 on success, -1 on failure
  */
 
-int main(int argc, char **argv)
+int main(int __attribute__((unused)) argc, char **argv)
 {
 	int f_from, f_to, readed;
 	char *file_from = argv[1], *file_to = argv[2];
