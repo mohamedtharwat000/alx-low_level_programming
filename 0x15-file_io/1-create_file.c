@@ -18,23 +18,19 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int fd, tmp, len;
+	int fd, tmp, len = 0;
 
 	if (!filename)
 	{
 		return (-1);
 	}
 
-	if (!text_content)
+	if (text_content)
 	{
-		fd = open(filename, O_CREAT);
-		close(fd);
-		return (1);
-	}
-
-	while (text_content++)
-	{
-		len++;
+		while (text_content[len])
+		{
+			len++;
+		}
 	}
 
 	fd = open(filename, O_TRUNC);
@@ -51,5 +47,6 @@ int create_file(const char *filename, char *text_content)
 		return (1);
 	}
 
+	close(fd);
 	return (1);
 }
