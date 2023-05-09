@@ -29,7 +29,6 @@ int create_file(const char *filename, char *text_content)
 
 	if (fd == -1)
 	{
-		close(fd);
 		fd = open(filename, O_TRUNC);
 		if (fd == -1)
 		{
@@ -40,12 +39,12 @@ int create_file(const char *filename, char *text_content)
 	{
 		if (!text_content)
 		{
-			close(fd);
 			return (1);
 		}
 		wr = write(fd, text_content, strlen(text_content));
 		if (wr <= 0)
 		{
+			close(fd);
 			return (-1);
 		}
 	}
@@ -53,4 +52,3 @@ int create_file(const char *filename, char *text_content)
 	close(fd);
 	return (1);
 }
-
