@@ -1,16 +1,16 @@
 # Makefile for the "school" program
 
 # Compiler
-CC := gcc
+CC = gcc
 
 # Source files
-SRC := main.c school.c
+SRC = main.c school.c
 
 # Object files (derived from source files)
-OBJ := $(SRC:.c=.o)
+OBJ = $(SRC:.c=.o)
 
 # Name of the executable
-NAME := school
+NAME = school
 
 # Rule to build the executable
 all: $(NAME)
