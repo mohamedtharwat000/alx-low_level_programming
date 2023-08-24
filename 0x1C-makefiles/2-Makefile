@@ -18,7 +18,3 @@ all: $(NAME)
 # Rule to build the executable if source files are updated
 $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
-
-# Rule to compile a source file into an object file
-%.o: %.c
-	$(CC) -c $< -o $@
