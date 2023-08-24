@@ -1,20 +1,28 @@
-# Variables
-CC = gcc
-SRC = main.c school.c
-OBJ = main.o school.o
-NAME = school
+# Makefile for the "school" program
 
-# Default target
-all: $(NAME)
+# Compiler
+CC := gcc
+
+# Source files
+SRC := main.c school.c
+
+# Object files (derived from source files)
+OBJ := $(SRC:.c=.o)
+
+# Name of the executable
+NAME := school
 
 # Rule to build the executable
+all: $(NAME)
+
+# Rule to build the executable if source files are updated
 $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-# Rule to build object files
-$(OBJ): $(SRC)
-	$(CC) -c -o $(OBJ) $(SRC)
+# Rule to compile a source file into an object file
+%.o: %.c
+	$(CC) -c $< -o $@
 
-# Clean target to remove object files and the executable
+# Clean rule to remove object files and the executable
 clean:
 	rm -f $(OBJ) $(NAME)
