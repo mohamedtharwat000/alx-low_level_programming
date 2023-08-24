@@ -1,20 +1,9 @@
-# Makefile for the "school" program
-
-# Compiler
 CC = gcc
-
-# Source files
 SRC = main.c school.c
-
-# Object files (derived from source files)
 OBJ = $(SRC:.c=.o)
-
-# Name of the executable
 NAME = school
 
-# Rule to build the executable
 all: $(NAME)
 
-# Rule to build the executable if source files are updated
 $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
