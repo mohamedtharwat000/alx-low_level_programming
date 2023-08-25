@@ -8,8 +8,7 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 
 all: $(NAME)
 
-main.o: main.c m.h
-school.o: school.c m.h
+%.o: m.h
 
 $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
