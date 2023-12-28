@@ -71,5 +71,31 @@ This repository contains the following topics:
 - <a href="https://github.com/mohamedtharwat000/binary_trees/"> binary_trees</a>
 
 
-## Author
-<a href="https://github.com/mohamedtharwat000/" > Mohamed Tharwat </a>
+## Contributing
+
+Contributions are welcome! Here are some ways you can contribute to this project:
+
+- Report bugs and issues by creating a new GitHub issue.
+- Fix bugs and issues by submitting pull requests.
+- Add new validation functionality to enhance the form's capabilities.
+- Improve styling and overall user experience.
+- Refactor code to improve code quality and maintainability.
+- Write documentation and improve existing docs to help others understand the project.
+
+To contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your branch to your forked repository.
+5. Submit a pull request, describing your changes in detail.
+
+I will review pull requests and provide feedback.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Credits
+
+Created by [Mohamed Tharwat](https://github.com/mohamedtharwat000). Feel free to reach out with any questions or feedback.
