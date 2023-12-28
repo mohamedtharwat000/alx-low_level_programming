@@ -11,11 +11,6 @@ Welcome to the C Programming Fundamentals repository! This repository was create
 
 C is a powerful and versatile programming language that serves as the foundation for many other languages. Understanding its fundamentals is crucial for any programmer, as it provides a solid basis for solving complex problems and building efficient software.
 
-## Table of Contents
-- About
-- Projects/Tasks
-- Resources
-- Author
 
 ## About
 If you're new to C programming, start by checking out the Getting Started guide. It will help you set up your development environment and provide some basic information about the language.
